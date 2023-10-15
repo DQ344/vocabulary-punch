@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="vp-user-center" />
+        <module name="vp-common-core" />
+        <module name="vp-modules-contest" />
+        <module name="vp-common-mybatis" />
+        <module name="vp-modules-dictionary" />
+        <module name="vp-modules-punch" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="vocabulary-punch" target="1.8" />
+      <module name="vp-common" target="1.8" />
+      <module name="vp-common-core" target="1.8" />
+      <module name="vp-common-mybatis" target="1.8" />
+      <module name="vp-modules" target="1.8" />
+      <module name="vp-modules-contest" target="1.8" />
+      <module name="vp-modules-dictionary" target="1.8" />
+      <module name="vp-modules-punch" target="1.8" />
+      <module name="vp-user-center" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="vocabulary-punch" options="-parameters" />
+      <module name="vp-common" options="-parameters" />
+      <module name="vp-common-core" options="-parameters" />
+      <module name="vp-common-mybatis" options="-parameters" />
+      <module name="vp-modules" options="-parameters" />
+      <module name="vp-modules-contest" options="-parameters" />
+      <module name="vp-modules-dictionary" options="-parameters" />
+      <module name="vp-modules-punch" options="-parameters" />
+      <module name="vp-user-center" options="-parameters" />
+    </option>
+  </component>
+</project>
