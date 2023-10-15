@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06e715a4-2e5d-4b95-bcf6-2d381ff9d593" name="默认变更列表" comment="" />
+    <list default="true" id="06e715a4-2e5d-4b95-bcf6-2d381ff9d593" name="默认变更列表" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vp-user-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +21,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -28,6 +34,7 @@
     </option>
   </component>
   <component name="ProjectId" id="2Wjke9iTvbne9NMinflxX2l7sU7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vp-user-center" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -134,12 +141,24 @@
       <workItem from="1697275006144" duration="230000" />
       <workItem from="1697276016339" duration="13064000" />
       <workItem from="1697294913259" duration="1673000" />
-      <workItem from="1697298140390" duration="5117000" />
+      <workItem from="1697298140390" duration="6070000" />
     </task>
+    <task id="LOCAL-00001" summary="词汇打卡功能初次搭建">
+      <created>1697337330395</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1697337330395</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="词汇打卡功能初次搭建" />
+    <option name="LAST_COMMIT_MESSAGE" value="词汇打卡功能初次搭建" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

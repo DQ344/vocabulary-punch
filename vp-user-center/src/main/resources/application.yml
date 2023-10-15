@@ -40,6 +40,6 @@ server:
 aliyun:
   oss:
     endpoint: https://oss-cn-beijing.aliyuncs.com
-    accessKeyId: LTAI5tG1nh49VYKdjeYNRawo
-    accessKeySecret: EVO7UNUrcpwHPFHiBoBRSX06p94qeE
+    accessKeyId: JIAMILTAI5tG1nh49VYKdjeYNRawo
+    accessKeySecret: JIAMIEVO7UNUrcpwHPFHiBoBRSX06p94qeE
     bucketName: vocabulary-punch
