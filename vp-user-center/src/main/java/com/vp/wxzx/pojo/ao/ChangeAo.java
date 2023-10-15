@@ -15,4 +15,8 @@ public class ChangeAo {
     private String oldPassword;
     // 新密码
     private String newPassword;
+    //邮箱
+    private String email;
+    // 邮箱令牌
+    private String token;
 }

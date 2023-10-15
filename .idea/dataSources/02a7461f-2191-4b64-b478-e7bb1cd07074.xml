@@ -765,103 +765,105 @@
       <Position>2</Position>
       <Comment>英译</Comment>
       <DataType>varchar(32)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
     <column id="239" parent="235" name="chinese">
       <Position>3</Position>
       <Comment>中译</Comment>
       <DataType>varchar(50)|0s</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <index id="240" parent="235" name="dictionary_info_id_uindex">
+    <column id="240" parent="235" name="property">
+      <Position>4</Position>
+      <DataType>varchar(32)|0s</DataType>
+    </column>
+    <index id="241" parent="235" name="dictionary_info_id_uindex">
       <ColNames>id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="241" parent="235" name="PRIMARY">
+    <key id="242" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="242" parent="235" name="dictionary_info_id_uindex">
+    <key id="243" parent="235" name="dictionary_info_id_uindex">
       <ColNames>id</ColNames>
       <UnderlyingIndexName>dictionary_info_id_uindex</UnderlyingIndexName>
     </key>
-    <column id="243" parent="236" name="user_id">
+    <column id="244" parent="236" name="user_id">
       <Position>1</Position>
       <Comment>用户id，账号</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="244" parent="236" name="password">
+    <column id="245" parent="236" name="password">
       <Position>2</Position>
       <Comment>密码</Comment>
       <DataType>varchar(20)|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="245" parent="236" name="nickname">
+    <column id="246" parent="236" name="nickname">
       <Position>3</Position>
       <Comment>昵称</Comment>
       <DataType>varchar(20)|0s</DataType>
     </column>
-    <column id="246" parent="236" name="open_id">
+    <column id="247" parent="236" name="open_id">
       <Position>4</Position>
       <Comment>微信授权码</Comment>
       <DataType>varchar(100)|0s</DataType>
     </column>
-    <column id="247" parent="236" name="session_id">
+    <column id="248" parent="236" name="session_id">
       <Position>5</Position>
       <Comment>微信会话码</Comment>
       <DataType>varchar(100)|0s</DataType>
     </column>
-    <column id="248" parent="236" name="avatar_file">
+    <column id="249" parent="236" name="avatar_file">
       <Position>6</Position>
       <Comment>头像图片</Comment>
       <DataType>varchar(100)|0s</DataType>
     </column>
-    <column id="249" parent="236" name="email">
+    <column id="250" parent="236" name="email">
       <Position>7</Position>
       <Comment>电子邮箱</Comment>
       <DataType>varchar(32)|0s</DataType>
     </column>
-    <index id="250" parent="236" name="user_info_user_id_uindex">
+    <index id="251" parent="236" name="user_info_user_id_uindex">
       <ColNames>user_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="251" parent="236" name="user_info_open_id_uindex">
+    <index id="252" parent="236" name="user_info_open_id_uindex">
       <ColNames>open_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="252" parent="236" name="user_info_session_id_uindex">
+    <index id="253" parent="236" name="user_info_session_id_uindex">
       <ColNames>session_id</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <index id="253" parent="236" name="user_info_email_uindex">
+    <index id="254" parent="236" name="user_info_email_uindex">
       <ColNames>email</ColNames>
       <Unique>1</Unique>
       <Type>btree</Type>
     </index>
-    <key id="254" parent="236" name="PRIMARY">
+    <key id="255" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>user_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="255" parent="236" name="user_info_user_id_uindex">
+    <key id="256" parent="236" name="user_info_user_id_uindex">
       <ColNames>user_id</ColNames>
       <UnderlyingIndexName>user_info_user_id_uindex</UnderlyingIndexName>
     </key>
-    <key id="256" parent="236" name="user_info_open_id_uindex">
+    <key id="257" parent="236" name="user_info_open_id_uindex">
       <ColNames>open_id</ColNames>
       <UnderlyingIndexName>user_info_open_id_uindex</UnderlyingIndexName>
     </key>
-    <key id="257" parent="236" name="user_info_session_id_uindex">
+    <key id="258" parent="236" name="user_info_session_id_uindex">
       <ColNames>session_id</ColNames>
       <UnderlyingIndexName>user_info_session_id_uindex</UnderlyingIndexName>
     </key>
-    <key id="258" parent="236" name="user_info_email_uindex">
+    <key id="259" parent="236" name="user_info_email_uindex">
       <ColNames>email</ColNames>
       <UnderlyingIndexName>user_info_email_uindex</UnderlyingIndexName>
     </key>

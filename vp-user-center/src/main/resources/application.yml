@@ -9,9 +9,6 @@ spring:
           url: jdbc:mysql://localhost:3306/vocabulary_punch
           username: root
           password: 123456
-
-
-
   servlet:
     multipart:
       # 配置单个文件上传大小限制
@@ -34,12 +31,4 @@ logging:
 
 server:
   # 端口号
-  port: 8080
-
-# 阿里云配置
-aliyun:
-  oss:
-    endpoint: https://oss-cn-beijing.aliyuncs.com
-    accessKeyId: JIAMILTAI5tG1nh49VYKdjeYNRawo
-    accessKeySecret: JIAMIEVO7UNUrcpwHPFHiBoBRSX06p94qeE
-    bucketName: vocabulary-punch
+  port: 9000

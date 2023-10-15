@@ -59,7 +59,7 @@ public class LoginServiceImpl implements LoginService {
     @Override
     public ResultBody enroll(EnrollAo enrollAo) {
         UserInfoDto userInfoDto = new UserInfoDto();
-        if(enrollAo.getPassword().length() < 8) return ResultBody.error().message("密码格式有误");
+        if(strongPasswordChecker(enrollAo.getPassword())) return ResultBody.error().message("密码等级太弱");
         BeanUtils.copyProperties(enrollAo, userInfoDto);
         try {
             userInfoMapper.insert(userInfoDto);
@@ -76,7 +76,19 @@ public class LoginServiceImpl implements LoginService {
      */
     @Override
     public ResultBody change(ChangeAo changeAo) {
-        return null;
+        UserInfoDto userInfoDto = userInfoMapper.selectById(changeAo.getUsername());
+        if(userInfoDto == null) return ResultBody.error().message("用户不存在");
+
+        if(changeAo.getEmail() != null && changeAo.getToken() != null){
+            return ResultBody.error().message("邮箱找回未开发");
+        }
+
+        if(userInfoDto.getPassword().equals(changeAo.getOldPassword())){
+            if(!strongPasswordChecker(changeAo.getNewPassword())) return ResultBody.error().message("密码等级太弱");
+            userInfoDto.setPassword(changeAo.getNewPassword());
+            userInfoMapper.updateById(userInfoDto);
+        }
+        return ResultBody.ok().message("修改密码成功");
     }
 
     /**
@@ -86,7 +98,7 @@ public class LoginServiceImpl implements LoginService {
      */
     @Override
     public ResultBody forget(ForgetAo forgetAo) {
-        return null;
+        return ResultBody.error().message("邮箱找回未开发");
     }
 
     /**
@@ -96,6 +108,28 @@ public class LoginServiceImpl implements LoginService {
      */
     @Override
     public ResultBody wechatLogin(String code) {
-        return null;
+        return ResultBody.error().message("微信快速登录未开发");
+    }
+
+    /**
+     * 强密码校验
+     * @param password 密码
+     * @return true/false
+     */
+    public boolean strongPasswordChecker(String password) {
+        int len = password.length();
+        if(len < 8) return false;
+        boolean special = false;
+        boolean lowercase = false;
+        boolean uppercase = false;
+        boolean digit = false;
+        for(int i = 0; i < len; i++){
+            if(Character.isUpperCase(password.charAt(i))) uppercase = true;
+            if(Character.isLowerCase(password.charAt(i))) lowercase = true;
+            if(Character.isDigit(password.charAt(i))) digit = true;
+            if(!Character.isDigit(password.charAt(i)) && !Character.isLowerCase(password.charAt(i)) && !Character.isUpperCase(password.charAt(i))) special = true;
+        }
+        int strong = (special ? 1 : 0) + (lowercase ? 1 : 0) + (uppercase ? 1 : 0) + (digit ? 1 : 0);
+        return strong >= 2;
     }
 }

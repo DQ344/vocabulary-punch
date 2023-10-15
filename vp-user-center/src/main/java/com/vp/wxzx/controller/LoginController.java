@@ -62,6 +62,7 @@ public class LoginController {
      * 忘记密码找回
      * @return
      */
+    @PutMapping("/forget")
     public ResultBody forget(@RequestBody ForgetAo forgetAo){
         return loginService.forget(forgetAo);
     }

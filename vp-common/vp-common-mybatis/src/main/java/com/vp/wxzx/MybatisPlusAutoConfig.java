@@ -16,8 +16,7 @@ public class MybatisPlusAutoConfig {
     public MybatisPlusInterceptor mybatisPlusInterceptor() {
         MybatisPlusInterceptor interceptor = new MybatisPlusInterceptor();
         //设置数据类型，还可以添加别的拦截器
-        interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.ORACLE));
+        interceptor.addInnerInterceptor(new PaginationInnerInterceptor(DbType.MYSQL));
         return interceptor;
     }
-
 }

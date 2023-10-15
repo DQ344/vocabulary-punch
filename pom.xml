@@ -105,6 +105,11 @@
     </dependencyManagement>
 
     <dependencies>
+        <!-- springboot-整合web组件 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <!--swagger3.0-->
         <dependency>
             <groupId>io.springfox</groupId>

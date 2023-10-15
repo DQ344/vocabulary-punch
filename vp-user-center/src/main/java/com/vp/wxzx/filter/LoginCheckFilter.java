@@ -1,6 +1,7 @@
 package com.vp.wxzx.filter;
 
 import com.alibaba.fastjson.JSONObject;
+import com.vp.wxzx.customenum.CodeStateEnum;
 import com.vp.wxzx.entity.ResultBody;
 import com.vp.wxzx.utils.JwtUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -25,6 +26,7 @@ public class LoginCheckFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest req = (HttpServletRequest) servletRequest;
         HttpServletResponse resp = (HttpServletResponse) servletResponse;
+        resp.setCharacterEncoding("utf-8");
 
         // 获取 url
         String url = req.getRequestURL().toString();
@@ -43,7 +45,7 @@ public class LoginCheckFilter implements Filter {
         // 判断令牌是否存在，如果不存在，返回错误结果（未登录）
         if(!StringUtils.hasLength(jwt)){
             log.info("请求头token为空，返回未登录信息");
-            ResultBody error = ResultBody.error().message("NOT_LOGIN");
+            ResultBody error = ResultBody.error(CodeStateEnum.AUTH_TOKEN_NOT_NULL);
             // 手动转换 对象 -- json --> 阿里巴巴 fastJSON
             String notLogin = JSONObject.toJSONString(error);
             resp.getWriter().write(notLogin);
@@ -57,7 +59,7 @@ public class LoginCheckFilter implements Filter {
         }catch (Exception e){ // jwt 解析失败
             e.printStackTrace();
             log.info("解析令牌失败，返回未登录");
-            ResultBody error = ResultBody.error().message("NOT_LOGIN");
+            ResultBody error = ResultBody.error(CodeStateEnum.AUTH_TOKEN_NOT_NULL);
             // 手动转换 对象 -- json --> 阿里巴巴 fastJSON
             String notLogin = JSONObject.toJSONString(error);
             resp.getWriter().write(notLogin);
