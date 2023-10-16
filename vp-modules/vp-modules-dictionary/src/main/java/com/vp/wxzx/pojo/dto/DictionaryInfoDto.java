@@ -25,8 +25,8 @@ public class DictionaryInfoDto {
     @TableField("chinese")
     private String chinese;
     /**
-     * 词性
+     * 音标
      */
-    @TableField("property")
-    private String property;
+    @TableField("phonetic")
+    private String phonetic;
 }

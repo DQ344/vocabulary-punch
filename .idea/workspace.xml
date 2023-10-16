@@ -4,53 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="06e715a4-2e5d-4b95-bcf6-2d381ff9d593" name="默认变更列表" comment="">
-      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/VpDictionaryApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/config/MybatisPlusConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/controller/DictionaryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/mapper/DictionaryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/pojo/ao/DictionaryInfoAo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/pojo/dto/DictionaryInfoDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/service/DictionaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/service/impl/DictionaryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/test/java/com/vp/wxzx/VpDictionaryApplicationTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/test/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-punch/src/main/java/com/vp/wxzx/VpPunchApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-punch/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/controller/UserInfoController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/service/UserInfoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/service/impl/UserInfoServiceImpl.java" afterDir="false" />
+    <list default="true" id="06e715a4-2e5d-4b95-bcf6-2d381ff9d593" name="默认变更列表" comment="词汇库模块以完成">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_06.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_SparseBitSet_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_6_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_4_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_3_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-punch/src/main/java/com/vp/wxzx/controller/PunchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-punch/src/main/java/com/vp/wxzx/customenum/ClockInGradeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-punch/src/main/java/com/vp/wxzx/mapper/WarehouseMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-punch/src/main/java/com/vp/wxzx/pojo/dto/WarehouseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-punch/src/main/java/com/vp/wxzx/service/PunchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vp-modules/vp-modules-punch/src/main/java/com/vp/wxzx/service/impl/PunchServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/02a7461f-2191-4b64-b478-e7bb1cd07074.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/02a7461f-2191-4b64-b478-e7bb1cd07074.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1cb175da-1b08-4885-955a-f0184c59acf3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1cb175da-1b08-4885-955a-f0184c59acf3/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1cb175da-1b08-4885-955a-f0184c59acf3/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/1cb175da-1b08-4885-955a-f0184c59acf3/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-common/vp-common-mybatis/src/main/java/com/vp/wxzx/MybatisPlusAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/vp-common/vp-common-mybatis/src/main/java/com/vp/wxzx/MybatisPlusAutoConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-common/vp-common-mybatis/target/classes/com/vp/wxzx/MybatisPlusAutoConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/vp-common/vp-common-mybatis/target/classes/com/vp/wxzx/MybatisPlusAutoConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-modules/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vp-modules/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-modules/vp-modules-contest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vp-modules/vp-modules-contest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vp-common/vp-common-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vp-common/vp-common-core/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/controller/Qwe.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-modules/vp-modules-punch/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vp-modules/vp-modules-punch/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/filter/LoginCheckFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/filter/LoginCheckFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/pojo/ao/ChangeAo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/pojo/ao/ChangeAo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/pojo/ao/ForgetAo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/pojo/ao/ForgetAo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/pojo/ao/UserInfoAo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/pojo/ao/UserInfoAo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/service/impl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/src/main/java/com/vp/wxzx/service/impl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/target/classes/com/vp/wxzx/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/target/classes/com/vp/wxzx/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/target/classes/com/vp/wxzx/filter/LoginCheckFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/target/classes/com/vp/wxzx/filter/LoginCheckFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/target/classes/com/vp/wxzx/pojo/ao/ChangeAo.class" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/target/classes/com/vp/wxzx/pojo/ao/ChangeAo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/target/classes/com/vp/wxzx/pojo/ao/ForgetAo.class" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/target/classes/com/vp/wxzx/pojo/ao/ForgetAo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/target/classes/com/vp/wxzx/pojo/ao/UserInfoAo.class" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/target/classes/com/vp/wxzx/pojo/ao/UserInfoAo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vp-user-center/target/classes/com/vp/wxzx/service/impl/LoginServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/vp-user-center/target/classes/com/vp/wxzx/service/impl/LoginServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/pojo/ao/DictionaryInfoAo.java" beforeDir="false" afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/pojo/ao/DictionaryInfoAo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/pojo/dto/DictionaryInfoDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/pojo/dto/DictionaryInfoDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/service/impl/DictionaryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/main/java/com/vp/wxzx/service/impl/DictionaryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/test/java/com/vp/wxzx/VpDictionaryApplicationTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vp-modules/vp-modules-punch/src/main/java/com/vp/wxzx/VpPunchApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/vp-modules/vp-modules-punch/src/main/java/com/vp/wxzx/VpPunchApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +46,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -94,7 +81,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cqyt-wxzx/zjyt-cloud" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -112,11 +99,40 @@
       <recent name="D:\wxzx\双体\vocabulary-punch\vp-common\vp-common-core\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.vp.wxzx.exception" />
+      <recent name="com.vp.wxzx.mapper" />
       <recent name="com.vp.wxzx.filter" />
       <recent name="com.vp.wxzx" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.VpDictionaryApplication">
+  <component name="RunManager" selected="Spring Boot.VpPunchApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VpDictionaryApplicationTest.getAllList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="vp-modules-dictionary" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.vp.wxzx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.vp.wxzx" />
+      <option name="MAIN_CLASS_NAME" value="com.vp.wxzx.VpDictionaryApplicationTest" />
+      <option name="METHOD_NAME" value="getAllList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VpDictionaryApplicationTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="vp-modules-dictionary" />
       <extension name="coverage">
@@ -172,27 +188,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VpUserCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.vp.wxzx.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.vp.wxzx.VpUserCenterApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SHORTEN_COMMAND_LINE" value="NONE" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.VpPunchApplication" />
         <item itemvalue="Spring Boot.VpDictionaryApplication" />
+        <item itemvalue="JUnit.VpDictionaryApplicationTest.getAllList" />
         <item itemvalue="Spring Boot.VpUserCenterApplication (1)" />
         <item itemvalue="JUnit.VpDictionaryApplicationTest.test" />
-        <item itemvalue="Spring Boot.VpPunchApplication" />
-        <item itemvalue="Spring Boot.VpUserCenterApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -221,6 +223,10 @@
       <workItem from="1697294913259" duration="1673000" />
       <workItem from="1697298140390" duration="27512000" />
       <workItem from="1697367367621" duration="6846000" />
+      <workItem from="1697382693556" duration="818000" />
+      <workItem from="1697423483995" duration="4018000" />
+      <workItem from="1697429753591" duration="1942000" />
+      <workItem from="1697453704266" duration="14684000" />
     </task>
     <task id="LOCAL-00001" summary="词汇打卡功能初次搭建">
       <created>1697337330395</created>
@@ -236,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1697338019095</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="词汇库模块以完成">
+      <created>1697382814607</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697382814607</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -245,7 +258,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="词汇打卡功能初次搭建" />
     <MESSAGE value="配置文件加密" />
-    <option name="LAST_COMMIT_MESSAGE" value="配置文件加密" />
+    <MESSAGE value="词汇库模块以完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="词汇库模块以完成" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/vp-modules/vp-modules-dictionary/src/test/java/com/vp/wxzx/VpDictionaryApplicationTest.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

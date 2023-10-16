@@ -1,7 +1,8 @@
 package com.vp.wxzx.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageHelper;
 import com.vp.wxzx.entity.ResultBody;
 import com.vp.wxzx.mapper.DictionaryMapper;
 import com.vp.wxzx.pojo.ao.DictionaryInfoAo;
@@ -43,21 +44,21 @@ public class DictionaryServiceImpl implements DictionaryService {
      */
     @Override
     public ResultBody listByPage(Integer pageNum, Integer pageSize, DictionaryInfoAo dictionaryInfoAo) {
-        Page<DictionaryInfoDto> page = new Page<>(pageNum, pageSize);
+        PageHelper.startPage(pageNum, pageSize);
         QueryWrapper<DictionaryInfoDto> wrapper = new QueryWrapper<>();
 
         // 模糊查询
         if(dictionaryInfoAo.getChinese() != null) wrapper.like("chinese", dictionaryInfoAo.getChinese());
         // 前缀查询
         else if(dictionaryInfoAo.getEnglish() != null) wrapper.likeRight("english", dictionaryInfoAo.getEnglish());
-        // 词性判断
-        else if(dictionaryInfoAo.getProperty() != null) wrapper.like("property", dictionaryInfoAo.getProperty());
         // 没有查询条件
         else wrapper = null;
 
-        page = dictionaryMapper.selectPage(page, wrapper);
+        // 2. 执行查询
+        List<DictionaryInfoDto> list = dictionaryMapper.selectList(wrapper);
+        Page<DictionaryInfoDto> page = (Page<DictionaryInfoDto>) list;
         long total = page.getTotal();
-        List<DictionaryInfoDto> records = page.getRecords();
+        List<DictionaryInfoDto> records = page.getResult();
         return ResultBody.ok().data("total", total).data("words", records);
     }
 
@@ -110,8 +111,12 @@ public class DictionaryServiceImpl implements DictionaryService {
     public ResultBody insert(DictionaryInfoAo dictionaryInfoAo) {
         DictionaryInfoDto dictionaryInfoDto = new DictionaryInfoDto();
         BeanUtils.copyProperties(dictionaryInfoAo, dictionaryInfoDto);
-        return dictionaryMapper.insert(dictionaryInfoDto) > 0 ? ResultBody.ok().message("插入成功") : ResultBody.ok().message("插入失败");
-
+        try {
+            dictionaryMapper.insert(dictionaryInfoDto);
+            return ResultBody.ok().message("插入成功");
+        }catch (Exception e){
+            return ResultBody.ok().message("插入失败");
+        }
     }
 
     /**
@@ -122,6 +127,7 @@ public class DictionaryServiceImpl implements DictionaryService {
     @Override
     public ResultBody importData(MultipartFile file) {
         // TODO: 实现导入Excel数据到字典的逻辑
+        file.getOriginalFilename();
         return null;
     }
 }

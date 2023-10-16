@@ -14,7 +14,7 @@ public class DictionaryInfoAo {
     private String english;
     // 中译
     private String chinese;
-    // 词性
-    private String property;
+    // 音标
+    private String phonetic;
 }
 
